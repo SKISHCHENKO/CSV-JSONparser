@@ -54,7 +54,8 @@ public class Main {
     }
     static String listToJson( List<Employee> list){
         Gson gson = new Gson();
-        Type listType = new TypeToken<List<Employee>>() {}.getType();
+        Type listType = new TypeToken<List<Employee>>() {
+        }.getType();
         return gson.toJson(list,listType);
     }
     static void writeString(String json, String fileName) {
